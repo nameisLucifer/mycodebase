@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="icon" href="https://loremicon.com/grad/128/128/343921428840/jpg" type="image/x-icon">
+</head>
+
+<style>
+    td {
+        text-align: center;
+        text-decoration: underline;
+    }
+/* 
+    * {
+        font-family: Arial, sans-serif;
+        color: green;
+        /* background-color: palegreen; */
+    } */
+
+    /* p {
+        text-align: justify;
+        border: 10px solid palevioletred;
+        padding: 10px;
+    } */
+
+    h1 {
+        background-color: blue;
+        margin: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+
+    div#test {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        border-right: 10px dotted yellow;
+        border-left: inset rgb(243, 15, 243) 10px;
+        border-top: inset rgb(255, 0, 174) 10px;
+        border-bottom: inset rgb(254, 0, 0) 10px;
+    }
+
+    fieldset {
+        display: inline;
+    }
+
+    .colorBlock1 {
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    .colorBlock2:hover {
+        background-color: red;
+    }
+
+    .colorBlock2 {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    .colorBlock3 {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    .one {
+        background-color: rgb(223, 223, 8);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(137, 127, 127, 0.842);
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .card {
+        width: 200px;
+        height: 500px;
+        /* border: 1px solid #ccc; */
+        /* border-radius: 10px; */
+        /* overflow: hidden; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    .mybutton {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h1>Hello, World!</h1>
+    <ul style="list-style-type: square;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend style="font-weight: bold; text-align: center;">test</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr><td><input placeholder="Enter search term" aria-label="Enter search term"></td></tr>
+
+                <tr>
+                    <td><label for="number">Number:</label></td>
+                    <td><input type="number" id="number" name="number" required style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="list">List:</label></td>
+                    <td> <select id="list" name="list" required>
+                            <option value="">Select an option</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2" selected>Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>sample list:</td>
+                    <td>
+                        <input list="mylist">
+                        <datalist id="mylist">
+                            <option value="Option A">
+                            <option value="Option B">
+                            <option value="Option C">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/200" alt="Sample Image"></td>
+                </tr>
+                <tr>
+                    <td><video controls width="250" height="200" muted>
+                            <source src="https://lorem.video/720p" type="video/mp4">
+                        </video></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <fieldset>
+  <legend>Your date of birth</legend>
+  <label for="dobDay">Day</label>
+  <select id="dobDay">…</select>
+  <label for="dobMonth">Month</label>
+  <select id="dobMonth">…</select>
+  <label for="dobYear">Year</label>
+  <input id="dobYear" type="text" placeholder="YYYY">
+</fieldset>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, delectus. Ipsam magnam quisquam culpa vitae
+        vero iste fugit dolore. Inventore distinctio molestias aspernatur, veritatis ipsam quia vel? Natus repellat
+        veritatis vel dolores deserunt facere autem excepturi odio quos facilis eveniet consequuntur recusandae possimus
+        odit quidem, accusamus fuga tempore esse ipsa, adipisci officia quas. Hic eveniet autem quis non officiis
+        laborum recusandae facere ullam voluptas repudiandae. Similique enim modi aperiam sint provident vel possimus
+        dicta quibusdam iusto quod dignissimos a id facilis consectetur praesentium sapiente ut est voluptatem, repellat
+        nobis, qui recusandae accusamus! Autem totam illum laborum quis unde ipsum commodi!</p>
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <div id="test"></div> <br>
+    <div class="colorBlock1"></div>
+    <div class="colorBlock2"></div>
+    <div class="colorBlock3"></div> <br>
+    <div class="container">
+        <div class="one"> 1 </div>
+        <div class="one"> 2 </div>
+        <div class="one"> 3 </div>
+        <div class="one"> 4 </div>
+    </div>
+    <div class="card">
+        <div><img src="https://picsum.photos/200" alt="Sample Image"></div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corporis fuga aspernatur totam quasi illo
+            quas, porro quae est ipsa, ducimus nemo laborum, officia reiciendis voluptatem. Reiciendis, minima
+            facere. Vel?
+        </div> <br>
+        <div><button class="mybutton">Click Me</button></div>
+    </div>
+    <dialog open >
+        <h2>Hello!</h2>
+        <p>This is a dialog box.</p>
+    </dialog>
+</body>
+
+</html>

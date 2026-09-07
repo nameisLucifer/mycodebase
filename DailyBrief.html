@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Brief</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .newsreader-test {
+        font-family: "Newsreader", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: "Newsreader", serif;
+    }
+
+    header {
+        background-color: #f2f2f2;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        font-weight: bold;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0 5px 6px #00000029;
+    }
+
+    .datetime {
+        color: #808080;
+    }
+
+    .newsreader-style {
+        font-family: "Newsreader", serif;
+        font-optical-sizing: auto;
+        font-weight: thin;
+        font-style: normal;
+    }
+
+    .navigation a {
+        color: #3e3d3d;
+        text-decoration: none;
+    }
+
+    .navigation :hover {
+        color: #ff0000;
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    main {
+        margin-top: 110px;
+        margin-left: 10px;
+        display: flex;
+        width: 100%;
+        background-color: rgb(203, 210, 208);
+    }
+
+
+    .main-card {
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #09080825;
+        height: 50%;
+    }
+
+    .sub-cards {
+        padding: 10px;
+        height: 100%;
+        width: 25%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .sub-news-card {
+        box-shadow: 5px 5px 5px 5px #09080825;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .imgs {
+        height: 75%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .logo {
+        height: 100%;
+    }
+
+    .main-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .sub-news-card>h2,
+    .sub-news-card>p {
+        padding: 5px;
+    }
+    .forms{
+        display: flex;
+        width: 100%;
+        border: none;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="datetime">
+            <time datetime="2026-09-07T11:02">September 7, 2026</time>
+        </div>
+        <div class="logo">
+            <img src="banner.png" alt="Logo" class="logo">
+        </div>
+        <div>
+            <nav class="navigation">
+                <a href="#">Home</a> |
+                <a href="#">World</a> |
+                <a href="#">Politics</a> |
+                <a href="#">Sport</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-card">
+            <img src="https://th-i.thgim.com/public/incoming/mauv50/article71438248.ece/alternates/LANDSCAPE_1200/BUILDING%20COLLAPSE%20NEW%20DELHI%205.JPG"
+                alt="news1" class="main-img">
+            <h1>Delhi building collapse LIVE: Five pulled out alive from rubble; Delhi HC agrees to hear fresh
+                PIL</h1>
+            <p class="newsreader-style">A total of seven bodies were recovered; the Delhi government ordered a
+                <br>magisterial probe
+            </p>
+        </div>
+        <section class="sub-cards">
+            <article class="sub-news-card">
+                <img src="https://th-i.thgim.com/public/incoming/9s5kcw/article71437700.ece/alternates/LANDSCAPE_1200/PTI09_07_2026_000044B.jpg"
+                    class="imgs">
+                <h2>TamilNadu</h2>
+                <p>Tumultuous scenes in Tamil Nadu Assembly as CM Vijay attacks DMK invoking Sarkaria Commission,
+                    Veeranam scandal</p>
+                <p><a>Rajesh</a> | <time datetime="2026-09-07T11:02">September 7, 2026</time></p>
+            </article>
+            <article class="sub-news-card">
+                <img src="https://th-i.thgim.com/public/incoming/csfyll/article71437688.ece/alternates/LANDSCAPE_1200/20260905109L.jpg"
+                    class="imgs">
+                <h2>New Delhi</h2>
+                <p>Delhi HC agrees to hear on September 7 Hindutva influencer Swatantra Bhardwaj’s plea against arrest
+                </p>
+                <p><a>Rajesh</a> | <time datetime="2026-09-07T11:02">September 7, 2026</time></p>
+            </article>
+            <article class="sub-news-card">
+                <img src="https://th-i.thgim.com/public/incoming/qz5cs0/article71437873.ece/alternates/LANDSCAPE_1200/2026-09-07T043542Z_254083318_RC2JDNAC2XW7_RTRMADP_3_NEPAL-FLOODS.JPG"
+                    class="imgs">
+                <h2>Kathmandu</h2>
+                <p>Rescue teams continued to search for 4,996 people, including at least 589 foreign nationals, who
+                    remain missing, while 13,396 people have been rescued so far</p>
+                <p><a>Rajesh</a> | <time datetime="2026-09-07T11:02">September 7, 2026</time></p>
+            </article>
+        </section>
+        <aside class="sub-cards">
+            <h1>Latest News</h1>
+            <article class="sub-news-card">
+                <h3>12 mins ago</h3>
+                <p>Women’s reservation will open new avenues for political leadership: Lok Sabha Speaker</p>
+            </article>
+            <article class="sub-news-card">
+                <h3>15 mins ago</h3>
+                <p>₹100 crore to strengthen T.N. forest field workforce; 200 schools, five colleges to become Blue-Green
+                    campuses</p>
+            </article>
+            <article class="sub-news-card">
+                <h3>25 mins ago</h3>
+                <p>Mizoram final electoral roll out: How to check your name</p>
+            </article>
+        </aside>
+    </main>
+            <fieldset class="forms">
+            <legend style="font-weight: bold; text-align: center;">Subscribe! for Weekly your letter✉️</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Sign Up">
+        </fieldset>
+    <footer>
+        <p>&copy; 2026 The Daily Brief. All rights reserved. <br> Created by Deepak with ❤️</p>
+    </footer>
+</body>
+
+</html>
